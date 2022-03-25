@@ -5,10 +5,6 @@ background-repeat: no-repeat;
 background-position: center;
 height:100vh;
 }
-/* *{
-    margin:0;
-    padding:0;   
-} */
 .car1 {
     position: relative;
 }
@@ -18,7 +14,7 @@ width: 200px;
 height: 100px;
 top: 420px;
 left: 20px;
-animation: carf 10s infinite 5s;
+animation: carf 10s infinite 7s;
 }
 
 @keyframes carf { 
@@ -35,7 +31,7 @@ width: 200px;
 height: 90px;
 top: 420px;
 left: 320px;
-animation: cars 10s infinite 5s;
+animation: cars 10s infinite 7s;
 }
 
 @keyframes cars { 
@@ -52,7 +48,7 @@ width: 200px;
 height: 110px;
 top: 420px;
 left: 600px;
-animation: cart 12s infinite 5s;
+animation: cart 12s infinite 7s;
 } 
 
 @keyframes cart { 
@@ -69,7 +65,7 @@ width: 200px;
 height: 110px;
 top: 420px;
 left: 885px;
-animation: carfo 10s infinite 5s;
+animation: carfo 10s infinite 7s;
 } 
 
 @keyframes carfo {
@@ -86,7 +82,7 @@ width: 200px;
 height: 90px;
 top: 430px;
 left: 1150px;
-animation: carfi 8s infinite 5s;
+animation: carfi 8s infinite 7s;
 } 
 
 @keyframes carfi { 
@@ -132,6 +128,86 @@ right: 1px;
     right: 380px;
 }
 
+/* start section */
+
+.starts {
+    
+    position: relative;
+}
+.starts p{ 
+    position: absolute;
+    top: 497px;
+    left: 127px;
+    font-size: 0px;
+    color: white;
+    font-weight: 900;
+animation: s 1s infinite 2s;}
+
+    @keyframes s { 
+        from { font-size: 0px; color: white;}
+        to { font-size: 130px; color: red;}
+        }
+
+.startt {position: relative;}
+
+.startt p{ position: absolute;
+    top: 497px;
+    left: 400px;
+    font-size: 0px;
+    color: white;
+    font-weight: 900;
+    animation: p 1s infinite 3s;}
+
+    @keyframes p { 
+        from {font-size: 0px; color: white;}
+        to {font-size: 130px; color: red;}
+        }
+
+.starta {position: relative;}
+
+.starta p{ position: absolute;
+        top: 497px;
+        left: 650px;
+        font-size: 0px;
+        color: white;
+        font-weight: 900;
+        animation: a 1s infinite 4s;}
+
+        @keyframes a { 
+            from {font-size: 0px; color: white;}
+            to {font-size: 130px; color: red;}
+            }
+
+.startr {position: relative;}
+
+.startr p{ position: absolute;
+        top: 497px;
+        left: 900px;
+        font-size: 0px;
+        color: white;
+        font-weight: 900;
+        animation: r 1s infinite 5s;}
+
+        @keyframes r { 
+            from {font-size: 0px; color: white;}
+            to {font-size: 130px; color: red;}
+            }
+
+.starttt {position: relative;}
+
+.starttt p{ position: absolute;
+            top: 497px;
+            left: 1180px;
+            font-size: 0px;
+            color: white;
+            font-weight: 900;
+            animation: tt 1s infinite 6s;}
+        
+            @keyframes tt { 
+                from {font-size: 0px; color: white;}
+                to {font-size: 130px; color: red;}
+                }
+
 /* finish section */
 .finish {
     position: relative;
@@ -143,4 +219,46 @@ right: 1px;
     height: 80px;
     top: 240px;
     left: 575px;
+    position: fixed;
+}
+
+/* winner section */
+
+.winner {
+width: 200px;
+height: 100px;
+position: relative;
+}
+.winner p {
+    position: absolute;
+    font-size: 0px;
+    font-weight: bold;
+    color: red;
+    top: 100px;
+    left: 600px;
+    text-align: center;
+    animation: win 1s 5 12s;
+}
+
+@keyframes win { 
+    from {font-size: 0px; color: red;}
+    to {font-size: 30px; color: red;}
+    }
+
+.moon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top:1px;
+    left: 800px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 30%, white);
+    animation: animate 8s linear infinite 1s;
+}
+
+@keyframes animate { 
+    0% { transform: rotate(0deg);
+    filter: hue-rotate(0deg);}
+    100% { transform: rotate(360deg);
+        filter: hue-rotate(360deg);}
 }
